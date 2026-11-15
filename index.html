@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@7.4.47/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="dashboard">
+        <aside class="sidebar">
+            <a class="brand" href="#"><i class="mdi mdi-view-dashboard" aria-hidden="true"></i> Dashboard</a>
+            <nav class="navigation" aria-label="Main navigation">
+                <a href="#"><i class="mdi mdi-home" aria-hidden="true"></i> Home</a>
+                <a href="#"><i class="mdi mdi-card-account-details-outline" aria-hidden="true"></i> Profile</a>
+                <a href="#"><i class="mdi mdi-message-reply" aria-hidden="true"></i> Messages</a>
+                <a href="#"><i class="mdi mdi-clock-time-three" aria-hidden="true"></i> History</a>
+                <a href="#"><i class="mdi mdi-file-multiple" aria-hidden="true"></i> Tasks</a>
+                <a href="#"><i class="mdi mdi-account-group" aria-hidden="true"></i> Communities</a>
+            </nav>
+            <nav class="navigation" aria-label="Account navigation">
+                <a href="#"><i class="mdi mdi-cog" aria-hidden="true"></i> Settings</a>
+                <a href="#"><i class="mdi mdi-help-box" aria-hidden="true"></i> Support</a>
+                <a href="#"><i class="mdi mdi-shield-check" aria-hidden="true"></i> Privacy</a>
+            </nav>
+        </aside>
+
+        <header class="header">
+            <div class="header-top">
+                <div class="search">
+                    <label for="search"><i class="mdi mdi-magnify" aria-hidden="true"></i><span
+                            class="sr-only">Search</span></label>
+                    <input type="search" id="search" name="search">
+                </div>
+                <div class="account">
+                    <button class="icon-button" aria-label="Notifications"><i class="mdi mdi-bell-ring-outline"
+                            aria-hidden="true"></i></button>
+                    <span class="avatar morgan" aria-hidden="true">🐱</span>
+                    <strong>Morgan Oakley</strong>
+                </div>
+            </div>
+            <div class="header-bottom">
+                <div class="greeting">
+                    <span class="avatar avatar-large morgan" aria-hidden="true">🐱</span>
+                    <div>
+                        <p>Hi there,</p>
+                        <h1>Morgan Oakley (@morgan)</h1>
+                    </div>
+                </div>
+                <div class="header-actions">
+                    <button>New</button><button>Upload</button><button>Share</button>
+                </div>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <section class="projects">
+                <h2>Your Projects</h2>
+                <div class="project-grid">
+                    <article class="project-card">
+                        <div>
+                            <h3>Super Cool Project</h3>
+                            <p>Sed tempus ut lacus ut scelerisque. Suspendisse sollicitudin nibh erat, id facilisis
+                                felis accumsan nec.</p>
+                        </div>
+                        <div class="card-actions">
+                            <button class="icon-button" aria-label="Favorite Super Cool Project"><i
+                                    class="mdi mdi-star-plus-outline" aria-hidden="true"></i></button>
+                            <button class="icon-button" aria-label="Watch Super Cool Project"><i
+                                    class="mdi mdi-eye-plus-outline" aria-hidden="true"></i></button>
+                            <button class="icon-button" aria-label="Share Super Cool Project"><i
+                                    class="mdi mdi-source-fork" aria-hidden="true"></i></button>
+                        </div>
+                    </article>
+                    <article class="project-card">
+                        <div>
+                            <h3>Less Cool Project</h3>
+                            <p>Nullam condimentum ipsum ut lectus vehicula consectetur. Quisque sed dolor tincidunt,
+                                consectetur sapien et, facilisis dolor. Duis sem purus, dignissim ut sapien in, varius
+                                pellentesque lacus.</p>
+                        </div>
+                        <div class="card-actions">
+                            <button class="icon-button" aria-label="Favorite Less Cool Project"><i
+                                    class="mdi mdi-star-plus-outline" aria-hidden="true"></i></button>
+                            <button class="icon-button" aria-label="Watch Less Cool Project"><i
+                                    class="mdi mdi-eye-plus-outline" aria-hidden="true"></i></button>
+                            <button class="icon-button" aria-label="Share Less Cool Project"><i
+                                    class="mdi mdi-source-fork" aria-hidden="true"></i></button>
+                        </div>
+                    </article>
+                    <article class="project-card">
+                        <div>
+                            <h3>Impossible App</h3>
+                            <p>In hac habitasse platea dictumst. Vivamus dictum rutrum arcu, a placerat velit sagittis
+                                id.</p>
+                        </div>
+                        <div class="card-actions">
+                            <button class="icon-button" aria-label="Favorite Impossible App"><i
+                                    class="mdi mdi-star-plus-outline" aria-hidden="true"></i></button>
+                            <button class="icon-button" aria-label="Watch Impossible App"><i
+                                    class="mdi mdi-eye-plus-outline" aria-hidden="true"></i></button>
+                            <button class="icon-button" aria-label="Share Impossible App"><i class="mdi mdi-source-fork"
+                                    aria-hidden="true"></i></button>
+                        </div>
+                    </article>
+                    <article class="project-card">
+                        <div>
+                            <h3>Easy Peasy App</h3>
+                            <p>Etiam cursus eros ac efficitur fringilla. Vestibulum dignissim urna eget accumsan
+                                aliquam. Curabitur dignissim nisi in tortor commodo, ac bibendum magna tincidunt.</p>
+                        </div>
+                        <div class="card-actions">
+                            <button class="icon-button" aria-label="Favorite Easy Peasy App"><i
+                                    class="mdi mdi-star-plus-outline" aria-hidden="true"></i></button>
+                            <button class="icon-button" aria-label="Watch Easy Peasy App"><i
+                                    class="mdi mdi-eye-plus-outline" aria-hidden="true"></i></button>
+                            <button class="icon-button" aria-label="Share Easy Peasy App"><i class="mdi mdi-source-fork"
+                                    aria-hidden="true"></i></button>
+                        </div>
+                    </article>
+                    <article class="project-card">
+                        <div>
+                            <h3>Ad Blocker</h3>
+                            <p>Quisque eget rutrum nisl. Nam augue justo, cursus vitae metus vel, pharetra hendrerit
+                                felis. Aliquam sed malesuada eros.</p>
+                        </div>
+                        <div class="card-actions">
+                            <button class="icon-button" aria-label="Favorite Ad Blocker"><i
+                                    class="mdi mdi-star-plus-outline" aria-hidden="true"></i></button>
+                            <button class="icon-button" aria-label="Watch Ad Blocker"><i
+                                    class="mdi mdi-eye-plus-outline" aria-hidden="true"></i></button>
+                            <button class="icon-button" aria-label="Share Ad Blocker"><i class="mdi mdi-source-fork"
+                                    aria-hidden="true"></i></button>
+                        </div>
+                    </article>
+                    <article class="project-card">
+                        <div>
+                            <h3>Money Maker</h3>
+                            <p>Praesent convallis, libero quis congue elementum, nunc ante faucibus sapien, ac
+                                scelerisque tortor purus sit amet ex. Pellentesque mollis nec sem vel aliquam.</p>
+                        </div>
+                        <div class="card-actions">
+                            <button class="icon-button" aria-label="Favorite Money Maker"><i
+                                    class="mdi mdi-star-plus-outline" aria-hidden="true"></i></button>
+                            <button class="icon-button" aria-label="Watch Money Maker"><i
+                                    class="mdi mdi-eye-plus-outline" aria-hidden="true"></i></button>
+                            <button class="icon-button" aria-label="Share Money Maker"><i class="mdi mdi-source-fork"
+                                    aria-hidden="true"></i></button>
+                        </div>
+                    </article>
+                </div>
+            </section>
+            <div class="right-column">
+                <section class="announcements">
+                    <h2>Announcements</h2>
+                    <div class="panel announcement-list">
+                        <article>
+                            <h3>Site Maintenance</h3>
+                            <p>Vestibulum condimentum tellus lacus, in accumsan elit maximus ac. Donec hendrerit sodales
+                                congue...</p>
+                        </article>
+                        <article>
+                            <h3>Community Share Day</h3>
+                            <p>Nam vel lectus tincidunt, rutrum nulla eu, ornare libero. Aliquam dictum accumsan
+                                porttitor...</p>
+                        </article>
+                        <article>
+                            <h3>Updated Privacy Policy</h3>
+                            <p>Phasellus efficitur nisi eget elit consectetur, eget condimentum ante auctor. Cras
+                                fringilla sagittis sem in mattis...</p>
+                        </article>
+                    </div>
+                </section>
+                <section class="trending">
+                    <h2>Trending</h2>
+                    <div class="panel trending-list">
+                        <div class="trending-user"><span class="avatar tegan" aria-hidden="true">🐶</span>
+                            <div>
+                                <p>@tegan</p>
+                                <p>World Peace Builder</p>
+                            </div>
+                        </div>
+                        <div class="trending-user"><span class="avatar morgan" aria-hidden="true">🐱</span>
+                            <div>
+                                <p>@morgan</p>
+                                <p>Super Cool Project</p>
+                            </div>
+                        </div>
+                        <div class="trending-user"><span class="avatar kendall" aria-hidden="true">🦊</span>
+                            <div>
+                                <p>@kendall</p>
+                                <p>Life Changing App</p>
+                            </div>
+                        </div>
+                        <div class="trending-user"><span class="avatar alex" aria-hidden="true">🐼</span>
+                            <div>
+                                <p>@alex</p>
+                                <p>No Traffic Maker</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>
